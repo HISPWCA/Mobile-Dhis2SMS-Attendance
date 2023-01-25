@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/failed_sms_action_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+        android:visibility="gone"
+        android:background="@color/colorWhite"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/resendFailedSMS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:drawableTop="@android:drawable/sym_action_email"
+            android:gravity="center"
+            android:text="Resend SMS"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/failed_sms_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/failed_sms_action_button"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:background="@color/colorWhite"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/failed_sms_data_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No data available"
+        android:textSize="20sp" />
+
+</RelativeLayout>

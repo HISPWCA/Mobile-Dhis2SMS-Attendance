@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/tab_sent_sms"
+        android:icon="@drawable/ic_sms_sent_24dp"
+        android:title="SENT"/>
+
+    <item android:id="@+id/tab_failed_sms"
+        android:icon="@drawable/ic_sms_failed_24dp"
+        android:title="FAILED"/>
+
+    <item android:id="@+id/tab_undelivered_sms"
+        android:icon="@drawable/ic_sms_undelivered_24dp"
+        android:title="UNDELIVERED"/>
+
+</menu>
+
+
